@@ -1,0 +1,6 @@
+package generalmess; 
+
+message Heartbeat {
+	required uint32 recode = 1;
+	required uint32 seq = 2;
+}

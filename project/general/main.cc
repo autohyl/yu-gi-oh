@@ -64,6 +64,11 @@ bool daemo_run() {
 	return true;
 }
 
+//º”‘ÿΩ≈±æ
+void initScript() {
+
+}
+
 int main(int argc, char* argv[])
 {
 	int ch;

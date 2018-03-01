@@ -1,0 +1,11 @@
+package gmserver; 
+
+message Heartbeat {
+	required uint32 recode = 1;
+	required uint32 seq = 2;
+}
+
+message LoginInfo {
+	required string user_id = 1; //用户id
+	required string user_pwd = 2; //用户密码
+}

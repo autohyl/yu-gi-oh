@@ -1,10 +1,10 @@
 #define _GNU_SOURCE 1
 #include "net.h"
-#include "General.pb.h"
+#include "GmServer.pb.h"
 #include <string>
 
 using namespace std;
-using namespace generalmess;
+using namespace gmserver;
 
 #define BUFFER_SIZE 64
 

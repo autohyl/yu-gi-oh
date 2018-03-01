@@ -35,6 +35,7 @@ void EchoServer::onMessage(const muduo::net::TcpConnectionPtr& conn,
 {
   muduo::string msg(buf->retrieveAllAsString());
   LOG_INFO << conn->name() << " echo " << msg.size() << " bytes, "
+           << "content: " << msg << ", "
            << "data received at " << time.toString();
   conn->send(msg);
 }

@@ -1,11 +1,11 @@
-PB=../../pb/general
+PB=../../pb/gmserver
 PROTOBUF=../../protobuf-2.5.0
 INC=-I./ -I$(PB)/ -I$(PROTOBUF)/src
 CFLAGS=-Wall
 TARGET=Client_test
 
 OBJ=Client_test.o\
-	$(PB)/General.pb.o
+	$(PB)/GmServer.pb.o
 OBJ+=$(PROTOBUF)/src/.libs/libprotobuf.a
 
 $(TARGET):$(OBJ)

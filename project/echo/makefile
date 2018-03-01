@@ -12,7 +12,7 @@ ifeq ($(x86_64),0)
 else
 	CFLAGS = -g -Wall -fno-strict-aliasing -D_GNU_SOURCE -fPIC -DSNACC_DEEP_COPY -DHAVE_VARIABLE_SIZED_AUTOMATIC_ARRAYS
 endif
-CFLAGS += -DJSON_USE_SIMPLE_INTERNAL_ALLOCATOR
+CFLAGS += -DMUDUO_STD_STRING -DJSON_USE_SIMPLE_INTERNAL_ALLOCATOR
 
 LIB += $(BASELIB)/libmuduo_net.a $(BASELIB)/libmuduo_base.a -lpthread
 TARGET = $(shell pwd | xargs basename -a)

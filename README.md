@@ -1,2 +1,2 @@
 # yu-gi-oh
-this is game frame, use C++ and Lua!!
+一个通用的服务器框架，网络库使用的muduo，目前还在完善当中，对自己这两年来的工作做一个总结
